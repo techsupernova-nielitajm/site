@@ -8,6 +8,6 @@ export default defineConfig({
   server: {
     host: true
   },
-  base: '/your-repo-name/',
+  base: '/mainpage/',
 })
  
