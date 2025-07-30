@@ -19,7 +19,7 @@ const Navbar = () => {
 
           {/* Links */}
           <div className="hidden md:flex items-center gap-6  text-xl">
-           <button> <a href="/" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Home</a></button>
+           <button> <a href="/site/" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Home</a></button>
            <button> <a href="/site/#abt" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">About</a></button>
            <button> <a href="/site/#/gallery" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Gallery</a></button>
            <button> <a href="/site/#con" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Contact</a></button>
@@ -37,11 +37,11 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="absolute top-[72px] bg-white rounded-xl shadow-lg py-3 px-5 flex flex-col gap-2 text-sm mt-1">
-            <a href="/#" className="hover:text-blue-600">Home</a>
-            <a href="/#abt" className="hover:text-blue-600">About</a>
-            <a href="/gallery" className="hover:text-blue-600">Gallery</a>
-            <a href="/#con" className="hover:text-blue-600">Contact</a>
-            <a href="/clubs" className="hover:text-blue-600">Clubs Connect</a>
+            <a href="/site/" className="hover:text-blue-600">Home</a>
+            <a href="/site/#abt" className="hover:text-blue-600">About</a>
+            <a href="/site/#/gallery" className="hover:text-blue-600">Gallery</a>
+            <a href="/site/#con" className="hover:text-blue-600">Contact</a>
+            <a href="/site/#/clubs" className="hover:text-blue-600">Clubs Connect</a>
           </div>
         )}
       </nav>
