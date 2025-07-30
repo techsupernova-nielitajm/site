@@ -37,11 +37,11 @@ const Footer = ( ) => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Home</a></li>
-              <li><a href="#abt" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">About Us</a></li>
-              <li><a href="/gallery" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Gallery</a></li>
-              <li><a href="#con" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Contact</a></li>
-              <li><a href="/clubs" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Clubs Connect</a></li>
+              <li><a href="/site/" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Home</a></li>
+              <li><a href="/site/#/#abt" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">About Us</a></li>
+              <li><a href="/site/#/gallery" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Gallery</a></li>
+              <li><a href="/site/#/#con" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Contact</a></li>
+              <li><a href="/site/#/clubs" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm">Clubs Connect</a></li>
             </ul>
           </div>
 
@@ -72,9 +72,9 @@ const Footer = ( ) => {
               © 2025 TechSuperNova. All rights reserved.
             </div>
             <div className="flex space-x-6">
-              <a href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
-              <a href="/tos" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Terms of Service</a>
-              <a href="/cookie" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Cookie Policy</a>
+              <a href="/site/#/privacy" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
+              <a href="/site/#/tos" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Terms of Service</a>
+              <a href="/site/#/cookie" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">Cookie Policy</a>
             </div>
           </div>
         </div>

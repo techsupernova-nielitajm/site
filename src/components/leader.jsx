@@ -92,7 +92,11 @@ const Leader = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
              Leaderboard
           </h1>
+          <p className="text-xl text-red-500 max-w-3xl mx-auto">
+            This Page is not updated fully and contains template data only.
+          </p>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            
             Discover the top-performing members across different years. Rankings based on contributions,
             event participation, leadership, and overall impact to the club.
           </p>
@@ -107,7 +111,7 @@ const Leader = () => {
           </div>
           <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-xl text-center">
             <Award className="w-12 h-12 mx-auto mb-2 text-white" />
-            <h3 className="text-2xl font-bold text-white">950</h3>
+            <h3 className="text-2xl font-bold text-white">0</h3>
             <p className="text-blue-100">Highest Score</p>
           </div>
         </div>
