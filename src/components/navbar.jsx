@@ -24,6 +24,7 @@ const Navbar = () => {
            <button> <a href="/site/#/gallery" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Gallery</a></button>
            <button> <a href="/site/#con" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Contact</a></button>
            <button> <a href="/site/#/clubs" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Clubs Connect</a></button>
+            <button> <a href="/site/#/leaderboard" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Leaderboard</a></button>
           </div>
 
           {/* Mobile Icon */}
@@ -42,6 +43,7 @@ const Navbar = () => {
             <a href="/site/#/gallery" className="hover:text-blue-600">Gallery</a>
             <a href="/site/#con" className="hover:text-blue-600">Contact</a>
             <a href="/site/#/clubs" className="hover:text-blue-600">Clubs Connect</a>
+            <a href="/site/#/leaderboard" className="hover:text-blue-600">Leaderboard</a>
           </div>
         )}
       </nav>
