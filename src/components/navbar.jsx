@@ -20,10 +20,10 @@ const Navbar = () => {
           {/* Links */}
           <div className="hidden md:flex items-center gap-6  text-xl">
            <button> <a href="/" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Home</a></button>
-           <button> <a href="/#abt" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">About</a></button>
-           <button> <a href="/gallery" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Gallery</a></button>
-           <button> <a href="/#con" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Contact</a></button>
-           <button> <a href="/clubs" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Clubs Connect</a></button>
+           <button> <a href="/site/#abt" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">About</a></button>
+           <button> <a href="/site/#/gallery" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Gallery</a></button>
+           <button> <a href="/site/#con" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Contact</a></button>
+           <button> <a href="/site/#/clubs" className="hover:bg-zinc-800 px-2 hover:py-2 rounded-full">Clubs Connect</a></button>
           </div>
 
           {/* Mobile Icon */}
