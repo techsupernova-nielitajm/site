@@ -184,7 +184,7 @@ const club = () => {
                     <div className='flex flex-col items-center  text-center mt-3 md:mt-0'>
                     <h2 className='text-white'>{itema.name}</h2>
                     <p className='text-gray-400'>{itema.position}</p>
-                    <div className='flex items-center '><Phone size={16}/> {itema.phone}</div>
+                    {/* <div className='flex items-center '><Phone size={16}/> {itema.phone}</div> */}
                     <div className='flex gap-4 mt-1 md:mt-3 justify-center'><a href={itema.linkedin} className="text-gray-400 hover:text-blue-400 transition-colors duration-300">
                                     <Linkedin size={20} />
                                   </a>
