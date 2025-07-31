@@ -84,11 +84,11 @@ const Home = () => {
   const past=[{
     title: "Brains & Bots 1.0",
     link: "",
-    img: "_result.png"
+    img: "brains.png"
   },
     {  title: "SIH 2024 Internal Hackathon",
     link: "",
-    img: "_sih.png"
+    img: "smart.png"
   },
  
   
