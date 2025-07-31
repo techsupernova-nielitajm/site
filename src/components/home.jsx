@@ -83,11 +83,11 @@ const Home = () => {
   ]
   const past=[{
     title: "Brains & Bots 1.0",
-    link: "#",
+    link: "https://www.notion.so/Brains-and-Bots-1-0-241c03de827980afb518f277ad1e8ddf?source=copy_link",
     img: "bots.png"
   },
     {  title: "SIH 2024 Internal Hackathon",
-    link: "#",
+    link: "https://www.notion.so/Smart-India-Hackathon-2025-241c03de8279801f8f1eed715c8f99bb?source=copy_link",
     img: "smartind.png"
   },
  
