@@ -83,13 +83,14 @@ const Home = () => {
   ]
   const past=[{
     title: "Brains & Bots 1.0",
-    description: "Brains and Bots 1.0 by TechSupernova at NIELIT Ajmer was a two-day tech event exploring AI, ML, Web3, cybersecurity, and more — packed with sessions, “Vibe Coding,” and a quiz to challenge sharp minds.",
-    img: "bb.jpeg"
+    link: "",
+    img: "_result.png"
   },
     {  title: "SIH 2024 Internal Hackathon",
-    description: "TechSupernova and NIELIT Ajmer jointly organized the Internal Hackathon for SIH 2024, where students pitched innovative solutions to qualify for the national round.",
-    img: "sih.jpeg"
+    link: "",
+    img: "_sih.png"
   },
+ 
   
    
    
@@ -103,7 +104,8 @@ const Home = () => {
    
   ]
   
-  const ongo = [
+  const ongo = [ 
+ 
   ]
   
   return (
@@ -169,6 +171,7 @@ const Home = () => {
       </div>
 
       <div className='md:hidden mt-20 mb-40'>
+        <h2 className='text-2xl font-bold text-center'>Council Members 2024-25</h2>
         <div className='relative flex items-center justify-center pt-20'>
         <div className='bg-indigo-800 absolute  z-[7] h-[25vh] w-[80vw] rounded-2xl flex items-center justify-center '>
           <div className='flex ml-3 items-center gap-3'><img src={team[card].image} className=" rounded h-40 w-[37%]"alt="" />
@@ -222,7 +225,7 @@ const Home = () => {
 
         </div>
        </div>
-       <div>
+       {/* <div>
         <h3 className='text-4xl font-bold mt-6 text-center text-white'>Events</h3>
         <div className='flex flex-col   justify-center pt-6 mx-8'>
           <h4 className='text-2xl font-semibold text-white'>Ongoing Events</h4>
@@ -261,8 +264,53 @@ const Home = () => {
             ))}
           </div>
         </div>
+       </div> */}
+
+           <div>
+        <h3 className='text-4xl font-bold mt-6 text-center text-white'>Events</h3>
+        <div className='flex flex-col   justify-center pt-6 mx-8'>
+          <h4 className='text-2xl font-semibold text-white'>Ongoing Events</h4>
+          {ongo.length === 0 ? (
+            <p className='text-gray-300 mt-10 text-center text-2xl'>No ongoing events at the moment.Stay Tuned!!</p>
+          ) : <></>}
+          <div className='flex flex-wrap align-center  gap-14 mt-8'>
+           
+            {ongo.map((event, index) => (
+              <div key={index} className=' p-4 rounded-lg    w-90'>
+                <div className='flex  flex-col md:flex-row items-center gap-4'> 
+                  <div>
+                    <img src={event.img} className="h-[55vh] md:h-[25vh] lg:h-[70vh] rounded-xl " alt="" />
+                  </div>
+                  <div>
+                <h5 className='text-lg font-semibold text-white'>{event.title}</h5>
+                <a href={event.link} className='text-sm hover:ml-3 h text-blue-600'>Explore More {"->"} </a></div>
+              </div></div>
+            ))}
+          </div>
+        </div>
+        <div className='flex flex-col   justify-center pt-6 mx-8 '>
+          <h4 className='text-2xl font-semibold text-white'>Past Events</h4>
+          {past.length === 0 ? (
+            <p className='text-gray-300 mt-10 text-center text-2xl'>No Past events to display. Stay Tuned!!</p>
+          ) : <></>}
+          <div className='flex  flex-wrap align-center justify-center  gap-6 md:gap-14 mt-8'>
+           
+            {past.map((event, index) => (
+              <div key={index} className='  p-4 rounded-lg  w-90'>
+                <div className='flex flex-col   gap-4'> 
+                  <div>
+                    <img src={event.img} className=" h-[55vh] md:h-[25vh] lg:h-[70vh] rounded-xl     " alt="" />
+                  </div>
+                  <div className='flex flex-col text-left ml-3 gap-2'>
+                <h5 className='text-lg font-semibold text-white'>{event.title}</h5>
+                <a href={event.link} className=' hover:ml-3 h text-blue-600'>Explore More {"->"} </a></div>
+              </div></div>
+            ))}
+          </div>
+        </div>
        </div>
-       <div>
+
+       {/* <div>
         <h3 className='text-4xl font-bold mt-6 text-center text-white'>News & Campus Buzz</h3>
          
         <div className='flex flex-col   justify-center pt-6 mx-8 '>
@@ -281,7 +329,8 @@ const Home = () => {
             ))}
           </div>
         </div>
-       </div></>
+       </div> */}
+       </>
   )
 }
 
