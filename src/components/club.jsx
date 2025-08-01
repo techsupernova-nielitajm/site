@@ -43,7 +43,7 @@ const data = [
       linkedin: "https://www.linkedin.com/company/ignite-nielit-ajmer",
       instagram: "https://www.instagram.com/ignite_nielitajm/",
       email: "ignitenielit@gmail.com",
-        website: ""
+        website: "https://iic.mic.gov.in/council-detail/IC202428746"
     }
   },
   {
