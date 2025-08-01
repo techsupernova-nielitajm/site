@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import NIELIT from './nielit.jsx'
+import Spline from '@splinetool/react-spline';
  
  
 import {TimerReset,Landmark , Presentation,Phone, Mail ,Linkedin,Instagram } from 'lucide-react';
@@ -147,14 +149,15 @@ const Home = () => {
          
         
       </div>
-      <div className='md:hidden   flex items-center justify-center relative top-25   '>
-          <div className="p-[8px]   bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-          <img src="NIELIT.png" className="h-50  " alt="" /></div>
-
+      <div className='  md:hidden   flex items-center justify-center relative top-23 h-120  '>
+          {/* <div className="p-[8px]   bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+          <img src="NIELIT.png" className="h-50  " alt="" /></div> */}
+          <NIELIT />
       </div>
 
-      <div id="abt" className='flex flex-col items-center justify-center  pt-30 md:p-0 '>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">About Us</h1>
+      <div id="abt" className='flex flex-col items-center justify-center z-[100] md:p-0 pt-4  '>
+        <div className='flex flex-col items-center w-[100vw] bg-stone-900 justify-center mb-6 z-[100]'>
+        <h1 className="text-4xl md:text-6xl font-bold z-[100] mb-6 text-center bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">About Us</h1></div>
         <p className="text-lg md:text-xl text-gray-300 max-w-4xl text-center px-4">We are the driving force behind technical innovation at NIELIT Ajmer. Our mission is to foster a culture of technological excellence and creativity among students through workshops, hackathons, and groundbreaking projects.</p>
         <div className='flex flex-wrap flex-col md:flex-row cardbox items-center justify-center pt-8'>
           {abt.map((item,index) => {
