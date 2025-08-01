@@ -113,8 +113,8 @@ const Home = () => {
   return (
     <>
     <div className='relative top-20 flex flex-col items-center justify-center text-center pt-16'>
-        <p className="text-white text-5xl md:text-8xl lg:text-9xl font-bold">TECHSUPERNOVA</p>
-        <p className="text-white text-4xl md:text-6xl lg:text-7xl font-bold">TECHNICAL CLUB</p>
+        <p className="text-white text-4xl md:text-8xl lg:text-9xl font-bold">TECHSUPERNOVA</p>
+        <p className="text-white text-3xl md:text-6xl lg:text-7xl font-bold">TECHNICAL CLUB</p>
       </div>
       <div className="  hidden md:flex flex-col items-center justify-center min-h-screen text-white pt-16">
         {/* Computer Screen Container */}
@@ -157,7 +157,7 @@ const Home = () => {
 
       <div id="abt" className='flex flex-col items-center justify-center z-[100] md:p-0 pt-4  '>
         <div className='flex flex-col items-center w-[100vw] bg-stone-900 justify-center mb-6 z-[100]'>
-        <h1 className="text-4xl md:text-6xl font-bold z-[100] mb-6 text-center bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">About Us</h1></div>
+        <h1 className="text-4xl md:text-6xl font-bold z-[100] h-[52px] mb-6 text-center bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">About Us</h1></div>
         <p className="text-lg md:text-xl text-gray-300 max-w-4xl text-center px-4">We are the driving force behind technical innovation at NIELIT Ajmer. Our mission is to foster a culture of technological excellence and creativity among students through workshops, hackathons, and groundbreaking projects.</p>
         <div className='flex flex-wrap flex-col md:flex-row cardbox items-center justify-center pt-8'>
           {abt.map((item,index) => {
@@ -174,16 +174,16 @@ const Home = () => {
       </div>
 
       <div className='md:hidden mt-20 mb-40'>
-        <h2 className='text-2xl font-bold text-center'>Council Members 2024-25</h2>
+        <h2 className='text-2xl text-white relative top-[-65px] font-bold text-center '>Council Members 2024-25</h2>
         <div className='relative flex items-center justify-center pt-20'>
-        <div className='bg-indigo-800 absolute  z-[7] h-[25vh] w-[80vw] rounded-2xl flex items-center justify-center '>
+        <div className='bg-indigo-800 absolute  z-[7] h-[25vh] w-[87vw] rounded-2xl flex items-center justify-center '>
           <div className='flex ml-3 items-center gap-3'><img src={team[card].image} className=" rounded h-40 w-[37%]"alt="" />
           <div className='text-white flex flex-col items-center'>
             <h4  >{team[card].name}</h4>
             <p>{team[card].title}</p>
             <div className='flex mt-4  items-center  gap-7'>
                  <a href="#" target="_blank" className='border border-white rounded-full p-1 '><Linkedin  size={15} /></a>
-                  <a href="#" className='border border-white rounded-full p-1 '><Mail  size={15} /></a>
+                  <a href={`mailto:${team[card].mail}`} className='border border-white rounded-full p-1 '><Mail  size={15} /></a>
                </div>
           </div>
           <div className='flex flex-col gap-5'>
@@ -192,7 +192,7 @@ const Home = () => {
               </div>
           </div>
         </div>
-        <div className='bg-indigo-600 absolute z-[2] h-[25vh] w-[70vw] top-[-43px] rounded-2xl'></div>
+        <div className='bg-indigo-600 absolute z-[2] h-[25vh] w-[70vw] top-[-40px] rounded-2xl'></div>
         <div className='bg-indigo-700 absolute   h-[25vh] w-[60vw] top-[-55px] rounded-2xl'></div></div>
       </div>
       
